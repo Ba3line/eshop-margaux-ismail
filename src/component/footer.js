@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faDiscord, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faDiscord, faInstagram } from "git add"
 import ContactModal from './modal-contact'
 
 
