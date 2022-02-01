@@ -1,8 +1,7 @@
 footer{
-    height: 200px;
-    background: rgb(42, 42, 66);
+    background: rgb(69, 69, 77);
     font-size: 20px;
-    color: rgb(165, 172, 209);
+    color: rgb(34, 109, 112);
   }
   
   hr{
@@ -30,6 +29,9 @@ footer{
   .middle{
     margin: 0 40px 0 40px;
   }
+  .right{
+    margin-right: 40px;
+  }
   
   .copyright-sigle{
     font-size: 20px;
@@ -39,8 +41,14 @@ footer{
   .copyright-text{
     font-weight: bold;
   }
-  
+
   .top-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .left-footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -49,13 +57,17 @@ footer{
     padding: 20px 0 20px 0
   }
   
+.white-letter{
+  color: white;
+}
+
   .bottom-footer{
     display: flex;
     justify-content: center;
     align-items: center;
   
     align-items: center;
-    background: rgb(60, 60, 95);
+    background: rgb(36, 36, 43);
     font-size: 18px;
   }
   

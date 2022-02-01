@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Architects+Daughter&family=Barlow+Semi+Condensed:ital,wght@1,600&family=DM+Sans&family=Dancing+Script&family=Indie+Flower&family=Luckiest+Guy&family=Poppins:wght@300&family=Press+Start+2P&family=Raleway:wght@300;400&family=Rubik:wght@300&family=Shizuru&display=swap');
+
+h1{font-family: 'Press Start 2P', cursive;
+    font-size: 70px;}
+
+.header-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-panier:hover .icon-cart{
+    color: rgb(34, 109, 112) !important;
+}
