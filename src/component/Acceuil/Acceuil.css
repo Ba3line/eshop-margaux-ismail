@@ -1,0 +1,18 @@
+.generalAcceuil {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.imageAcceuil {
+    margin-top: 100px;
+}
+
+.nomCardAcceuil {
+    margin-top: 175px;
+}
+
+.divImageAcceuil {
+    width: 100%;
+    height: 50%;
+}
