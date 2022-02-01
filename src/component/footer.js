@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faDiscord, faInstagram } from "git add"
+import { faFacebook, faDiscord, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import ContactModal from './modal-contact'
 
 
@@ -22,7 +22,7 @@ const Footer = () =>{
                 </div>
             </div>
             <div className='bottom-footer'>
-                <p className='copyright-zone'><span className='copyright-sigle'>©</span> 2022 <spans className='copyright-text'>copyright</spans> RetroTendo</p>
+                <p className='copyright-zone my-4'><span className='copyright-sigle'>©</span> 2022 <spans className='copyright-text'>copyright</spans> RetroTendo</p>
             </div>
         </footer> 
         </> 
