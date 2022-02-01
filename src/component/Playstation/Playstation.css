@@ -1,0 +1,15 @@
+.generalPlaystation {
+    width: 300px;
+    height: 45vh;
+    margin: 20px 40px 0 40px;
+    border-radius: 10px;
+}
+
+.enleverStock {
+    cursor: pointer;
+}
+
+.enleverStock {
+    border: none;
+    border-radius: 50%;
+}

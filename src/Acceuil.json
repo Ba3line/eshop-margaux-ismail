@@ -1,0 +1,17 @@
+[
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/N64-Console-Set.png/2560px-N64-Console-Set.png",
+        "nomCategorie": "Jeux Nintendo",
+        "lien": "/Nintendo"
+    },
+    {
+        "image": "https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/game-boy.png",
+        "nomCategorie": "Jeux GameBoy",
+        "lien": "/Gameboy"
+    },
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/PSX-Console-wController.png/1280px-PSX-Console-wController.png",
+        "nomCategorie": "Jeux PS1",
+        "lien": "/Playstation"
+    }
+]
