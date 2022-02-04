@@ -1,29 +1,31 @@
 import './Gameboy.css'
 import React from 'react';
+import { faPlusSquare, faMinusSquare } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 
 function Gameboy(props) {
     return (
         <div>
             <div className="generalGameboy bg-dark">
-                <div className="divImageGameboy text-center">
-                    <img src={props.imageGameboy} alt="" className='imageGameboy w-50 mt-2' />
-                </div>
-                <div className="InfoGameboy d-flex justify-content-between">
-                    <p className="info text-light">{props.info}</p>
-                    <p className="prixGameboy text-light">{props.prixGameboy} €</p>
-                </div>
-                <p className="quantiteGameboy text-light">Quantité: {props.quantitéGameboy}</p>
-                <p className='text-light'>Vous avez {props.acheter} {props.info} dans le panier</p>
-                <div className="bouttonPrendreRemettre">
-                    <button className="text-dark enleverStock" onClick={props.quantitéGameboy == 0 || props.argent <= props.prixGameboy ? "" : props.function}>+1</button>
-                    <button className="text-dark remettreStock" onClick={props.acheter == 0 ? "" : props.function2}>-1</button>
-                </div>
-                <Link to="panier">
-                    <div className="ajouterPanier">
-                        <button onClick={props.panier} className='addPanier'>Ajouter au panier</button>
+                <Link onClick={props.preview} to="preview">
+                    <div className="divImageGameboy text-center">
+                        <img src={props.imageGameboy} alt="" className='imageGameboy mt-2' />
+                    </div>
+                    <p className="info text-light mt-3 ms-3">{props.info}</p>
+                    <div className="InfoGameboy d-flex justify-content-between">
+                        <p className="quantiteGameboy text-light ms-3">Quantité: {props.quantitéGameboy}</p>
+                        <p className="prixGameboy text-light me-3">{props.prixGameboy} €</p>
                     </div>
                 </Link>
+                <p className='text-light ms-3'>{props.acheter} {props.info} dans le panier</p>
+                <div className=" d-flex justify-content-center mt-5">
+                    <button className="text-dark enleverStock border-0 w-25 bg-transparent" onClick={props.quantitéGameboy == 0 || props.argent <= props.prixGameboy ? "" : props.function}><FontAwesomeIcon className='icon-cart ms-2 plus' icon={faPlusSquare} /></button>
+                    <button className="text-dark remettreStock border-0 w-25 bg-transparent" onClick={props.acheter == 0 ? "" : props.function2}><FontAwesomeIcon className='icon-cart ms-2 moins' icon={faMinusSquare} /></button>
+                </div>
+                <div className="ajouterPanier mt-3 border-1 d-flex justify-content-center">
+                    <button onClick={props.panier} className='addPanier'>Ajouter au panier</button>
+                </div>
             </div>
         </div>
     );

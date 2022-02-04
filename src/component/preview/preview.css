@@ -1,0 +1,16 @@
+.bouttonPreviewRetour {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.bouttonPreviewRetour:hover {
+    background-color: #87CEFA !important;
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    .generalPreview {
+        width: 375px;
+        display: flex;
+    }
+}

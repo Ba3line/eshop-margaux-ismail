@@ -1,0 +1,21 @@
+.formulaire {
+    width: 35%;
+}
+
+@media screen and (min-width:768px) and (max-width: 1000px) {
+    .formAdmin {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width: 768px) {
+    .formAdmin {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width: 424px) {
+    .formAdmin {
+        width: 330px;
+    }
+}

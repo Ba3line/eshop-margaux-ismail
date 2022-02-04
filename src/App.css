@@ -1,62 +1,78 @@
 .App {
-  display: flex;
-  justify-content: space-evenly;
+  background-image: url('./images/mario222.jpeg');
+  background-size: contain;
 }
 
 @media screen and (max-width: 768px) {
-  .App {
+  .cardAcceuil {
     flex-direction: column;
-    margin-left: 230px;
+    align-items: center;
   }
-}
-
-.nintendo {
-  display: flex;
-  flex-direction: column;
-}
-
-.row1Nintendo {
-  display: flex;
-  flex-direction: row;
-}
-
-.row2Nintendo {
-  display: flex;
-  flex-direction: row;
-}
-
-.gameboy {
-  display: flex;
-  flex-direction: column;
-}
-
-.row1Gameboy {
-  display: flex;
-  flex-direction: row;
-}
-
-.row2Gameboy {
-  display: flex;
-  flex-direction: row;
-}
-
-.Playstation {
-  display: flex;
-  flex-direction: column;
-}
-
-.row1Playstation {
-  display: flex;
-  flex-direction: row;
-}
-
-.row2Playstation {
-  display: flex;
-  flex-direction: row;
 }
 
 .divPetitPanier {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+.titrePanier {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.generalPreview {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+.bouttonPreviewRetour {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.bouttonPreviewRetour:hover {
+  background-color: #87CEFA !important;
+}
+
+.cardNintendo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cardNintendo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cardGameboy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cardGameboy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cardPlaystation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cardPlaystation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

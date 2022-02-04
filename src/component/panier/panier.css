@@ -1,0 +1,14 @@
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.supprimerPanier {
+    width: 250px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+}

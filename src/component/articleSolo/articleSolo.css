@@ -1,0 +1,39 @@
+.generalSolo {
+    height: 200px;
+}
+
+.infoBleu {
+    color: #87CEFA !important;
+}
+
+@media screen and (max-width: 425px) {
+    .generalSolo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 400px;
+        width: 300px !important;
+    }
+    .image {
+        width: 70%;
+    }
+    .divImage {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .generalSolo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 400px;
+        width: 300px !important;
+    }
+    .image {
+        width: 70%;
+    }
+    .divImage {
+        margin: 0 !important;
+    }
+}

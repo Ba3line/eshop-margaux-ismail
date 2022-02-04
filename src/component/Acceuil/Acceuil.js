@@ -2,14 +2,14 @@ import './Acceuil.css'
 import React from 'react';
 import { Link } from "react-router-dom";
 
+
 function Acceuil(props) {
     return (
         <div>
-            
-            <Link to={props.lien}>
-                <div className="generalAcceuil bg-dark mt-5">
+            <Link className='text-decoration-none color-transparent' to={props.lien}>
+                <div className="generalAcceuil bg-dark mx-5">
                     <div className="divImageAcceuil text-center">
-                        <img src={props.image} alt="" className='imageAcceuil w-75' />
+                        <img src={props.image} alt="" className='imageAcceuil' />
                     </div>
                     <div className="texteAcceuil">
                         <h4 className="nomCardAcceuil text-light text-center">{props.nom}</h4>

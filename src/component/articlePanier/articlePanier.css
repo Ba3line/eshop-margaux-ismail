@@ -1,0 +1,106 @@
+.generalArticlepanier {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.infoPanier {
+    color: #87CEFA !important;
+}
+
+.textPanier {
+    margin-right: 100px !important;
+}
+
+.articlePanier {
+    height: 300px;
+}
+
+.bouttonPrendreRemettre2 {
+    margin-right: 160px;
+}
+
+@media screen and (min-width:768px) and (max-width: 1000px) {
+    .articlePanier {
+        flex-direction: column ;
+        height: 450px !important;
+        width: 350px !important;
+    }
+    .textPanier {
+        font-size: 14px !important;
+        margin: 0 !important;
+        margin-top: 15px !important;
+    }
+    .text {
+        margin-left: 20px !important;
+    }
+    .imagePanier {
+        width: 75% !important;
+        margin-top: 20px !important;
+    }
+    .divImage {
+        width: 85% !important;
+        text-align: center;
+    }
+    .bouttonPrendreRemettre2 {
+        margin: 0 !important;
+        display: flex;
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    .articlePanier {
+        flex-direction: column ;
+        height: 450px !important;
+        width: 350px !important;
+    }
+    .textPanier {
+        font-size: 14px !important;
+        margin: 0 !important;
+        margin-top: 15px !important;
+    }
+    .text {
+        margin-left: 20px !important;
+    }
+    .imagePanier {
+        width: 75% !important;
+        margin-top: 20px !important;
+    }
+    .divImage {
+        width: 85% !important;
+        text-align: center;
+    }
+    .bouttonPrendreRemettre2 {
+        margin: 0 !important;
+        display: flex;
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    .articlePanier {
+        flex-direction: column ;
+        height: 450px !important;
+        width: 320px !important;
+    }
+    .textPanier {
+        font-size: 14px !important;
+        margin: 0 !important;
+        margin-top: 15px !important;
+    }
+    .text {
+        margin-left: 20px !important;
+    }
+    .imagePanier {
+        width: 75% !important;
+        margin-top: 20px !important;
+    }
+    .divImage {
+        width: 85% !important;
+        text-align: center;
+    }
+    .bouttonPrendreRemettre2 {
+        margin: 0 !important;
+        display: flex;
+        margin-top: 20px !important;
+    }
+}

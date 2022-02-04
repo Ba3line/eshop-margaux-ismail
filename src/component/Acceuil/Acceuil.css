@@ -2,10 +2,14 @@
     width: 300px;
     height: 500px;
     border-radius: 10px;
+    margin-top: 80px;
 }
 
 .imageAcceuil {
     margin-top: 100px;
+    width: 75%;
+    transition: 0.4s;
+    animation: ease-in-out;
 }
 
 .nomCardAcceuil {
@@ -15,4 +19,19 @@
 .divImageAcceuil {
     width: 100%;
     height: 50%;
+}
+
+.nomCardAcceuil {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    transition: 0.4s;
+    animation: ease-in-out;
+}
+
+.generalAcceuil:hover .nomCardAcceuil {
+    font-size: 20px;
+}
+
+.generalAcceuil:hover .imageAcceuil {
+    width: 85%;
 }

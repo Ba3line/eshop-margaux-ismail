@@ -1,29 +1,31 @@
 import './Playstation.css'
 import React from 'react';
+import { faPlusSquare, faMinusSquare } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 
 function Playstation(props) {
     return (
         <div>
             <div className="generalPlaystation bg-dark">
-                <div className="divImagePlaystation text-center">
-                    <img src={props.imagePlaystation} alt="" className='imagePlaystation w-50 mt-2' />
-                </div>
-                <div className="InfoPlaystation d-flex justify-content-between">
-                    <p className="info text-light">{props.info}</p>
-                    <p className="prixPlaystation text-light">{props.prixPlaystation} €</p>
-                </div>
-                <p className="quantitePlaystation text-light">Quantité: {props.quantitePlaystation} unités</p>
-                <p className='text-light'>Vous avez {props.acheter} {props.info} dans le panier</p>
-                <div className="bouttonPrendreRemettre">
-                    <button className="text-dark enleverStock" onClick={props.quantitePlaystation == 0 || props.argent <= props.prixPlaystation ? "" : props.function}>+1</button>
-                    <button className="text-dark remettreStock" onClick={props.acheter == 0 ? "" : props.function2}>-1</button>
-                </div>
-                <Link to="panier">
-                    <div className="ajouterPanier">
-                        <button onClick={props.panier} className='addPanier'>Ajouter au panier</button>
+                <Link onClick={props.preview} to="preview">
+                    <div className="divImagePlaystation text-center">
+                        <img src={props.imagePlaystation} alt="" className='imagePlaystation mt-2' />
+                    </div>
+                    <p className="info text-light mt-3 ms-3">{props.info}</p>
+                    <div className="InfoPlaystation d-flex justify-content-between">
+                        <p className="quantitePlaystation text-light ms-3">{props.quantitePlaystation} unités</p>
+                        <p className="prixPlaystation text-light me-3">{props.prixPlaystation} €</p>
                     </div>
                 </Link>
+                <p className='text-light ms-3'>{props.acheter} {props.info} dans le panier</p>
+                <div className="bouttonPrendreRemettre d-flex justify-content-center mt-4">
+                    <button className="text-dark enleverStock border-0 bg-transparent w-25" onClick={props.quantitePlaystation == 0 || props.argent <= props.prixPlaystation ? "" : props.function}><FontAwesomeIcon className='icon-cart ms-2 plus' icon={faPlusSquare} /></button>
+                    <button className="text-dark remettreStock border-0 bg-transparent w-25" onClick={props.acheter == 0 ? "" : props.function2}><FontAwesomeIcon className='icon-cart ms-2 moins' icon={faMinusSquare} /></button>
+                </div>
+                    <div className="ajouterPanier mt-3 d-flex justify-content-center">
+                        <button onClick={props.panier} className='addPanier'>Ajouter au panier</button>
+                    </div>
             </div>
         </div>
     );
