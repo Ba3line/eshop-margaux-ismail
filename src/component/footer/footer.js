@@ -3,10 +3,10 @@ import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faDiscord, faInstagram, faTwitch, faTwitter, faYoutube, faReddit } from "@fortawesome/free-brands-svg-icons"
 import ContactModal from './modal-contact'
-import visa from '../images/visa.png'
-import paypal from '../images/paypal.png'
-import bancontact from '../images/bancontact.png'
-import mastercard from '../images/mastercard.png'
+import visa from '../../images/visa.png'
+import paypal from '../../images/paypal.png'
+import bancontact from '../../images/bancontact.png'
+import mastercard from '../../images/mastercard.png'
 
 
 const Footer = () =>{

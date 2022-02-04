@@ -1,0 +1,35 @@
+.corps{
+    background: url(../../images/wallpapermario.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px 0;
+}
+
+.background{
+    width: 80%;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.top, .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    opacity: initial;
+}
+.bottom{
+    margin-bottom: 50px;
+}
+
+.cadre{
+    height: 500px;
+    width: 300px;
+    background-color: black;
+    border-radius: 15px;
+}
